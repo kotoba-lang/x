@@ -10,7 +10,7 @@
 
   httpx → babashka.http-client; json → cheshire."
   (:require [cheshire.core :as json]
-            [clojure.string :as str]))
+            [kotoba.lang.text :as str]))
 
 (def default-config {:base-url "http://127.0.0.1:4000/v1"
                      :model "tier0-general" :timeout-ms 60000})
