@@ -11,7 +11,7 @@
   (:require [cheshire.core :as json]
             [lgx.server :as server]
             [clojure.java.io :as io]
-            [clojure.string :as str]))
+            [kotoba.lang.text :as str]))
 
 (defn load-cron-specs
   "Read + filter cron specs from langgraph.json. Each kept spec has :schedule and

@@ -16,7 +16,7 @@
             [lgx.audit :as audit]
             [lgx.llm :as llm]
             [cheshire.core :as json]
-            [clojure.string :as str]))
+            [kotoba.lang.text :as str]))
 
 (def hook-hints
   {"curiosity"  "Open with a surprising claim or counterintuitive observation that the reader needs to keep reading to resolve."

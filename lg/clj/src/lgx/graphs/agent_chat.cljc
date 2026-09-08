@@ -14,7 +14,7 @@
   (:require [langgraph.graph :as g]
             [lgx.audit :as audit]
             [lgx.llm :as llm]
-            [clojure.string :as str]))
+            [kotoba.lang.text :as str]))
 
 (def actor-prompts
   {"community_manager"

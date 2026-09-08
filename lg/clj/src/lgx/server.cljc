@@ -19,7 +19,7 @@
             [lgx.graphs.health :as health]
             [lgx.graphs.agent-chat :as agent-chat]
             [lgx.graphs.compose-tweet :as compose-tweet]
-            [clojure.string :as str]))
+            [kotoba.lang.text :as str]))
 
 (def GRAPHS
   "name → delayed compiled langgraph-clj graph."

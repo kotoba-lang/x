@@ -5,7 +5,7 @@
   Network-free: the LLM/audit legs default to error/best-effort, so every graph
   runs to completion deterministically (matching the Python smoke that never hit
   the network either). Run: `bb test` (from clj/) or `bb run_tests.clj`."
-  (:require [clojure.test :refer [deftest is testing run-tests]]
+  (:require [kotoba.lang.text] [clojure.test :refer [deftest is testing run-tests]]
             [clojure.java.io :as io]
             [cheshire.core :as json]
             [lgx.server :as server]
@@ -128,7 +128,7 @@
   (let [long-s (apply str (repeat 300 "a"))
         out (compose-tweet/enforce-280 long-s)]
     (is (<= (count out) 271))
-    (is (clojure.string/ends-with? out "…"))))
+    (is (kotoba.lang.text/ends-with? out "…"))))
 
 (deftest test-compose-parse-llm-json
   (is (= {:tweets ["a"] :rationale "x" :hashtags []}

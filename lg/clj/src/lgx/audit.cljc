@@ -14,7 +14,7 @@
   The dispatch is fire-and-forget: a failure to emit MUST NOT block the node.
   Audit loss is logged (to *err*) but never raised."
   (:require [cheshire.core :as json]
-            [clojure.string :as str]))
+            [kotoba.lang.text :as str]))
 
 (def default-config
   {:app-did "did:web:x.etzhayyim.com"
