@@ -19,7 +19,7 @@ node behavior, same NSID surface.
 ## Run
 
 ```bash
-bb test            # or: bb run_tests.clj   (17 tests / 34 assertions, network-free)
+kbb -M:test            # or: kbb run_tests.cljk   (17 tests / 34 assertions, network-free)
 ```
 
 `bb.edn` pins langgraph-clj to the same sha as the repo-root bb.edn. State is a

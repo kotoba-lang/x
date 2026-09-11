@@ -4,7 +4,7 @@
 
   Network-free: the LLM/audit legs default to error/best-effort, so every graph
   runs to completion deterministically (matching the Python smoke that never hit
-  the network either). Run: `bb test` (from clj/) or `bb run_tests.clj`."
+  the network either). Run: `kbb -M:test` (from clj/) or `kbb run_tests.cljk`."
   (:require [kotoba.lang.text] [clojure.test :refer [deftest is testing run-tests]]
             [clojure.java.io :as io]
             [cheshire.core :as json]
