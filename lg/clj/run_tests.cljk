@@ -1,10 +1,10 @@
-#!/usr/bin/env bb
+#!/usr/bin/env kbb
 ;; lg-x — bb-native test runner (Clojure / babashka; no shell). ADR-2606280030.
 ;;
 ;; Per the repo-wide rule (root CLAUDE.md §"Operational code = clj/bb"): first-party
 ;; tooling is clj/bb, NOT shell — new apps ship run_tests.clj, never run_tests.sh.
 ;;
-;;   bb run_tests.clj          # from 60-apps/etzhayyim-project-x/lg/clj/
+;;   kbb run_tests.cljk          # from 60-apps/etzhayyim-project-x/lg/clj/
 ;;   bb test                   # same, via the bb.edn :tasks alias
 ;;
 ;; bb.edn supplies the langgraph-clj git dep + the src/test classpath. The smoke
