@@ -32,7 +32,7 @@ state by langgraph-clj.
   to the **Murakumo loopback LiteLLM gateway** (`http://127.0.0.1:4000/v1`,
   ADR-2605215000); still overridable via `MURAKUMO_URL` / legacy `VLLM_URL`.
 - **health RW probe** — the Python node opened a RisingWave/Postgres `SELECT 1`.
-  RisingWave is the charter-PROHIBITED substrate (root CLAUDE.md §State), so this
+  RisingWave is the charter-PROHIBITED substrate (root AGENTS.md §State), so this
   port does NOT reintroduce a PG driver: with no `RW_URL` it returns `:rw-ok false`
   exactly as the Python no-RW branch. A kotoba-engine probe is the proper swap-in.
 - **HTTP framing + checkpointer** — the FastAPI/uvicorn app shell

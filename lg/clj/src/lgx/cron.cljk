@@ -5,7 +5,7 @@
   array in `langgraph.json`. langgraph.json currently declares `crons: []`, so this
   is a no-op in practice; the loader is ported faithfully so a future schedule keeps
   the same shape. Actual scheduling under bb is a launchd LaunchAgent invoking a bb
-  task (root CLAUDE.md §Residence), NOT an in-process scheduler — so this port
+  task (root AGENTS.md §Residence), NOT an in-process scheduler — so this port
   provides spec LOADING + a fire closure, and leaves residency to launchd
   (deviation from the APScheduler in-process model, per the operational-code rule)."
   (:require [cheshire.core :as json]
