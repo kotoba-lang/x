@@ -1,7 +1,7 @@
 #!/usr/bin/env kbb
 ;; lg-x — bb-native test runner (Clojure / babashka; no shell). ADR-2606280030.
 ;;
-;; Per the repo-wide rule (root CLAUDE.md §"Operational code = clj/bb"): first-party
+;; Per the repo-wide rule (root AGENTS.md §"Operational code = clj/bb"): first-party
 ;; tooling is clj/bb, NOT shell — new apps ship run_tests.clj, never run_tests.sh.
 ;;
 ;;   kbb run_tests.cljk          # from 60-apps/etzhayyim-project-x/lg/clj/

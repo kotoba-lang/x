@@ -7,7 +7,7 @@
   (3) emit audit (fire-and-forget). Primary smoke endpoint for the runbook.
 
   Port deviation: the Python node opened a RisingWave/Postgres connection
-  (`SELECT 1`). RisingWave is the charter-PROHIBITED substrate (root CLAUDE.md
+  (`SELECT 1`). RisingWave is the charter-PROHIBITED substrate (root AGENTS.md
   §State), so this port does NOT reintroduce a PG driver. With no `RW_URL` set
   (the charter-aligned default) the probe returns `:rw-ok false` exactly as the
   Python node did when `RW_URL` was unset; a future kotoba-engine health probe
